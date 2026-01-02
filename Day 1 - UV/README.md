@@ -36,6 +36,7 @@ uv sync
 ```
 
 This will:
+
 - Create a virtual environment (`.venv/`)
 - Install all required dependencies
 - Set up the project for development
@@ -57,7 +58,7 @@ echo "OPENAI_API_KEY=your-api-key-here" > .env
 
 **Important:** Replace `your-api-key-here` with your actual OpenAI API key.
 
-You can get your API key from: https://platform.openai.com/api-keys
+You can get your API key from: <https://platform.openai.com/api-keys>
 
 ## 📖 Usage
 
@@ -99,17 +100,17 @@ uv run agi-day-1 --help
 
 ### Available Options
 
-| Option | Description |
-|--------|-------------|
-| `prompt` | Your message/prompt to send to the AI (required) |
-| `--clear` | Clear conversation history and start fresh |
-| `--no-web-search` | Disable web search tool |
-| `--model MODEL` | Specify the model to use (default: `gpt-4o-mini`) |
-| `--help` | Show help message |
+| Option            | Description                                       |
+| ----------------- | ------------------------------------------------- |
+| `prompt`          | Your message/prompt to send to the AI (required)  |
+| `--clear`         | Clear conversation history and start fresh        |
+| `--no-web-search` | Disable web search tool                           |
+| `--model MODEL`   | Specify the model to use (default: `gpt-4o-mini`) |
+| `--help`          | Show help message                                 |
 
 ## 📁 Project Structure
 
-```
+```text
 Agentic-AI/
 └── Day 1 - UV/
     ├── AGI-Day-1/
@@ -136,13 +137,15 @@ Agentic-AI/
 ### Error: `OPENAI_API_KEY environment variable is not set!`
 
 **Solution**: Make sure you've created a `.env` file in the `AGI-Day-1/` directory with your API key:
-```
+
+```json
 OPENAI_API_KEY=sk-your-actual-key-here
 ```
 
 ### Error: `Python 3.12+ required`
 
 **Solution**: Install Python 3.12 or higher. Check your version:
+
 ```bash
 python --version
 ```
@@ -150,6 +153,7 @@ python --version
 ### Error: `uv: command not found`
 
 **Solution**: Install UV package manager:
+
 ```bash
 # On Windows (PowerShell)
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
@@ -160,7 +164,8 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 ### Conversation not remembering previous messages
 
-**Solution**: 
+**Solution**:
+
 - Check if `.conversation_id` file exists in the `AGI-Day-1/` directory
 - Make sure you're running commands from the `AGI-Day-1/` directory
 - Try clearing and starting fresh: `uv run agi-day-1 --clear`
@@ -192,5 +197,4 @@ Feel free to submit issues, fork the repository, and create pull requests!
 
 ---
 
-**Happy Chatting! 🚀**
-
+### Happy Chatting! 🚀
