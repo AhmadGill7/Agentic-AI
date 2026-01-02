@@ -12,7 +12,6 @@ dependencies = [
 
 [project.scripts]
 agi-day-1 = "package.main:main"
-my-packaged-app = "package.__init__:main"
 
 [tool.uv]
 package = true
