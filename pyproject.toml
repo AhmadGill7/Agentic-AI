@@ -1,0 +1,18 @@
+[project]
+name = "agi-day-1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=2.14.0",
+    "python-dotenv>=1.0.0",
+    "requests>=2.32.5",
+]
+
+[project.scripts]
+agi-day-1 = "package.main:main"
+my-packaged-app = "package.__init__:main"
+
+[tool.uv]
+package = true
