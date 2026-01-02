@@ -22,7 +22,7 @@ A command-line interface (CLI) tool for interacting with OpenAI's Responses API.
 
 ```bash
 git clone https://github.com/AhmadGill7/Agentic-AI.git
-cd Agentic-AI/AGI-Day-1/
+cd Agentic-AI/"Day 1 - UV"/AGI-Day-1/
 ```
 
 Or simply navigate to the project directory if you already have it.
@@ -42,7 +42,7 @@ This will:
 
 ### 3. Set Up Your API Key
 
-Create a `.env` file in the project root directory:
+Create a `.env` file in the `AGI-Day-1/` directory:
 
 ```bash
 # On Windows (PowerShell)
@@ -110,16 +110,18 @@ uv run agi-day-1 --help
 ## 📁 Project Structure
 
 ```
-AGI-Day-1/
-├── package/
-│   ├── __init__.py
-│   └── main.py          # Main application code
-├── .venv/               # Virtual environment (auto-generated)
-├── .conversation_id     # Conversation state (auto-generated)
-├── .env                 # Your API key (create this)
-├── pyproject.toml       # Project configuration & dependencies
-├── uv.lock              # Dependency lock file
-└── README.md           # This file
+Agentic-AI/
+└── Day 1 - UV/
+    ├── AGI-Day-1/
+    │   ├── package/
+    │   │   ├── __init__.py
+    │   │   └── main.py          # Main application code
+    │   ├── .venv/               # Virtual environment (auto-generated)
+    │   ├── .conversation_id     # Conversation state (auto-generated)
+    │   ├── .env                 # Your API key (create this)
+    │   ├── pyproject.toml       # Project configuration & dependencies
+    │   └── uv.lock              # Dependency lock file
+    └── README.md                # This file
 ```
 
 ## 🔧 How It Works
@@ -133,7 +135,7 @@ AGI-Day-1/
 
 ### Error: `OPENAI_API_KEY environment variable is not set!`
 
-**Solution**: Make sure you've created a `.env` file in the project root with your API key:
+**Solution**: Make sure you've created a `.env` file in the `AGI-Day-1/` directory with your API key:
 ```
 OPENAI_API_KEY=sk-your-actual-key-here
 ```
@@ -159,8 +161,8 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ### Conversation not remembering previous messages
 
 **Solution**: 
-- Check if `.conversation_id` file exists in the project root
-- Make sure you're running commands from the project directory
+- Check if `.conversation_id` file exists in the `AGI-Day-1/` directory
+- Make sure you're running commands from the `AGI-Day-1/` directory
 - Try clearing and starting fresh: `uv run agi-day-1 --clear`
 
 ## 🔐 Security Notes
